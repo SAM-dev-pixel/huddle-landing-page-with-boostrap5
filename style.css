@@ -1,0 +1,104 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+  --fm-poppins: 'Poppins', sans-serif;
+  
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+}
+html { font-size: 100%; }
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.navbar-brand img { width: 6rem; }
+.nav-btn {
+  font-size: .7rem;
+  color: var(--pink) !important;
+  border: 0.075rem solid var(--pink);
+  box-shadow: 0 0 0.075rem hsl(0, 100%, 63%, .6) !important;
+  transition: .2s;
+}
+.btn:focus { box-shadow: none; }
+.nav-btn:hover {
+  color: var(--light-pink);
+  border-color: var(--light-pink);
+}
+
+#main { margin-top: 7.75rem; }
+
+h1, h2, h3, h4 {
+  color: var(--very-dark-cyan);
+  font-family: var(--fm-poppins);
+  line-height: 1.4;
+}
+h2 { font-size: 1.25rem; }
+h4 {
+  color: white;
+  font-size: 1.25rem;
+}
+.text {
+  font-size: .92rem;
+  color: var(--very-dark-cyan);
+  line-height: 1.4;
+}
+
+.started-btn,
+.subscribe-btn {
+  color: white;
+  font-size: .82rem;
+  font-weight: 500;
+  letter-spacing: 500;
+  background: var(--pink);
+  box-shadow: 0 .1rem .25rem rgba(0,0,0,.25);
+  transition: .2s;
+}
+.email-input,
+.subscribe-btn { 
+  font-size: .92rem;
+  font-family: var(--fm-poppins);
+}
+:is(.started-btn, .subscribe-btn):hover {
+  color: white;
+  background: var(--light-pink);
+}
+.hero-img { margin: 5.25rem 0 5.25rem 0;}
+
+.icon { width: 1.75rem; }
+.bold-txt { 
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+.pale-blue { background: var(--very-pale-blue) !important; }
+
+#footer {
+  background-color: var(--very-dark-cyan);
+}
+.foot-links a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+.foot-links i:hover { color: var(--very-pale-blue) !important; }
+.footer-brand img { width: 11.75rem; }
+.email-input.error { border: .08rem solid var(--light-red); }
+.input-contain.error::after {
+  content: "Check your email please";
+  font-size: .86rem;
+  font-family: sans-serif;
+  color: var(--light-red);
+}
+
+@media (min-width: 768px) {
+  
+  html { font-size: 115%; }
+  
+}
