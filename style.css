@@ -102,3 +102,26 @@ h4 {
   html { font-size: 115%; }
   
 }
+
+/*=== ANIMATIONS ===*/
+#main { overflow: hidden; }
+.text,
+.hero-img,
+.foot-link {
+  transform: translateY(1em);
+  opacity: 0;
+  transition: 1s;
+}
+:is(.text, .hero-img, .foot-link).active {
+  transform: translateY(0);
+  opacity: 1;
+}
+article img {
+  transform: translateX(120%);
+  transition: 1s;
+}
+article img.left { transform: translateX(-120%); }
+article img.active { transform: translateX(0); }
+.intro-str { opacity: 0; }
+.social-links a:nth-child(2) { transition-delay: .1s; }
+.social-links a:nth-child(3) { transition-delay: .2s; }
